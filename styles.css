@@ -1,0 +1,160 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font and background */
+body {
+    font-family: 'Inknut Antiqua', serif;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow-x: hidden; /* Prevent horizontal scroll on small screens */
+    margin: 0;
+    padding: 0;
+}
+
+/* Background animations */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/2881.jpg');
+    animation: changeBackground 20s infinite; /* Background image animation */
+    z-index: -1;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* Logo and Name Animation */
+.logo-anim {
+    display: flex;
+    align-items: center;
+    animation: fadeInUp 3s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.logo-anim img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 20px;
+    animation: logoSpin 3s infinite;
+}
+
+@keyframes logoSpin {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo-anim h1 {
+    font-family: 'BioRhyme', serif;
+    font-size: 2rem;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.menu li {
+    margin: 0 20px;
+    animation: fadeInRight 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Sections */
+.section {
+    padding: 2rem 0;
+    text-align: center;
+    animation: fadeInUp 2s ease forwards;
+    opacity: 0;
+}
+
+/* Main animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Background image animation */
+@keyframes changeBackground {
+    0%, 100% {
+        background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/2881.jpg');
+    }
+    50% {
+        background-image: url('https://wallpaperset.com/w/full/6/5/0/48650.jpg');
+    }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-size: 0.8rem;
+    animation: fadeIn 3s forwards;
+}
+
+/* Smoke effect animation */
+@keyframes smokeEffect {
+    0%, 100% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for mobile devices */
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .menu li {
+        margin: 10px 0;
+        animation: fadeInUp 2s ease forwards;
+        opacity: 0;
+    }
+}
