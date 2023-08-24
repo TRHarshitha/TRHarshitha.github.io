@@ -49,16 +49,6 @@ body {
     max-width: 80px;
     height: auto;
     margin-right: 20px;
-    animation: logoSpin 3s infinite;
-}
-
-@keyframes logoSpin {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(360deg);
-    }
 }
 
 .logo-anim h1 {
@@ -121,7 +111,7 @@ body {
         background-image: url('https://www.archpaper.com/wp-content/uploads/2022/08/Matias-del-Campo_01-1536x683.jpeg');
     }
     50% {
-        background-image: url('https://wallpaperset.com/w/full/6/5/0/48650.jpg');
+        background-image: url('https://artisanhd.com/wp-content/uploads/2019/01/design-your-own-house-ocean-view-inspiration-artisanhd.jpg');
     }
 }
 
