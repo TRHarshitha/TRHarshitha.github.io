@@ -15,18 +15,6 @@ body {
     padding: 0;
 }
 
-/* Background animations */
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://uploads-ssl.webflow.com/62d597b300f3e8bc76aff8db/63d8017be5fcbfa5179dd069_Tadao%20Ando.png');
-    animation: changeBackground 20s infinite; /* Background image animation */
-    z-index: -1;
-}
-
 /* Container */
 .container {
     display: flex;
@@ -37,11 +25,10 @@ body {
     justify-content: center;
 }
 
-/* Logo and Name Animation */
+/* Logo and Name */
 .logo-anim {
     display: flex;
     align-items: center;
-    animation: fadeInUp 3s ease-in-out;
     margin-bottom: 1rem;
 }
 
@@ -54,6 +41,7 @@ body {
 .logo-anim h1 {
     font-family: 'BioRhyme', serif;
     font-size: 2rem;
+    margin: 0; /* Remove margin to center-align the title */
 }
 
 /* Menu */
@@ -70,49 +58,14 @@ body {
 
 .menu li {
     margin: 0 20px;
-    animation: fadeInRight 2s ease forwards;
-    opacity: 0;
-}
-
-@keyframes fadeInRight {
-    from {
-        transform: translateX(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+    opacity: 1; /* Remove animation for immediate visibility */
 }
 
 /* Sections */
 .section {
     padding: 2rem 0;
     text-align: center;
-    animation: fadeInUp 2s ease forwards;
-    opacity: 0;
-}
-
-/* Main animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Background image animation */
-@keyframes changeBackground {
-    0%, 100% {
-        background-image: url('https://www.archpaper.com/wp-content/uploads/2022/08/Matias-del-Campo_01-1536x683.jpeg');
-    }
-    50% {
-        background-image: url('https://artisanhd.com/wp-content/uploads/2019/01/design-your-own-house-ocean-view-inspiration-artisanhd.jpg');
-    }
+    opacity: 1; /* Remove animation for immediate visibility */
 }
 
 /* Footer */
@@ -121,17 +74,6 @@ body {
     padding: 2rem;
     color: white;
     font-size: 0.8rem;
-    animation: fadeIn 3s forwards;
-}
-
-/* Smoke effect animation */
-@keyframes smokeEffect {
-    0%, 100% {
-        opacity: 0.1;
-    }
-    50% {
-        opacity: 0.4;
-    }
 }
 
 /* Media Queries */
@@ -144,7 +86,6 @@ body {
     }
     .menu li {
         margin: 10px 0;
-        animation: fadeInUp 2s ease forwards;
-        opacity: 0;
+        opacity: 1; /* Remove animation for immediate visibility */
     }
 }
