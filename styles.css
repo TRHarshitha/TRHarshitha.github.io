@@ -22,7 +22,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/2881.jpg');
+    background-image: url('https://uploads-ssl.webflow.com/62d597b300f3e8bc76aff8db/63d8017be5fcbfa5179dd069_Tadao%20Ando.png');
     animation: changeBackground 20s infinite; /* Background image animation */
     z-index: -1;
 }
@@ -118,7 +118,7 @@ body {
 /* Background image animation */
 @keyframes changeBackground {
     0%, 100% {
-        background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/2881.jpg');
+        background-image: url('https://www.archpaper.com/wp-content/uploads/2022/08/Matias-del-Campo_01-1536x683.jpeg');
     }
     50% {
         background-image: url('https://wallpaperset.com/w/full/6/5/0/48650.jpg');
