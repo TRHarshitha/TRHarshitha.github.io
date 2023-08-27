@@ -45,7 +45,7 @@ body {
 }
 
 .logo-anim img {
-    max-width: 80px;
+    max-width: 120px; /* Increased the logo size */
     height: auto;
     margin-right: 20px;
 }
@@ -82,6 +82,12 @@ body {
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+/* Remove bullet points for sub-categories */
+.menu .submenu ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 /* Sections */
