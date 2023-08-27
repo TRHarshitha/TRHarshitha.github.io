@@ -34,6 +34,7 @@ body {
     padding: 2rem;
     height: 100vh;
     justify-content: center;
+    text-align: justify; /* Justified alignment */
 }
 
 /* Logo and Name Animation */
@@ -45,7 +46,7 @@ body {
 }
 
 .logo-anim img {
-    max-width: 80px;
+    max-width: 120px; /* Increased the logo size */
     height: auto;
     margin-right: 20px;
 }
@@ -59,12 +60,14 @@ body {
 .menu {
     display: flex;
     align-items: center;
+    justify-content: center; /* Keep the menu centered */
 }
 
 .menu ul {
     list-style: none;
     display: flex;
     margin-left: auto;
+    padding-left: 0; /* Removed bullet points */
 }
 
 .menu li {
@@ -73,21 +76,15 @@ body {
     opacity: 0;
 }
 
-@keyframes fadeInRight {
-    from {
-        transform: translateX(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+/* Adjust alignment for the menu */
+.menu ul {
+    justify-content: center;
 }
 
 /* Sections */
 .section {
     padding: 2rem 0;
-    text-align: center;
+    text-align: justify; /* Justified alignment */
     animation: fadeInUp 2s ease forwards;
     opacity: 0;
 }
