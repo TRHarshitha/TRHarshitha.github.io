@@ -45,8 +45,8 @@ body {
 }
 
 .logo-anim img {
-    max-width: 120px; /* Increased the logo size */
-    height: auto;
+    max-width: 120px; /* Increased the logo width */
+    height: 120px; /* Increased the logo height */
     margin-right: 20px;
 }
 
