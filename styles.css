@@ -66,8 +66,8 @@ body {
 .menu ul {
     list-style: none;
     display: flex;
-    margin-left: auto;
-    padding-left: 0; /* Removed bullet points */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
 }
 
 .menu li {
@@ -79,6 +79,27 @@ body {
 /* Adjust alignment for the menu */
 .menu ul {
     justify-content: center;
+}
+
+/* Centered content for sub-menu dropdowns */
+.menu .submenu {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    text-align: center; /* Center content */
+}
+
+.menu li:hover .submenu {
+    display: block;
+    padding: 10px;
+}
+
+.menu .submenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
 }
 
 /* Sections */
