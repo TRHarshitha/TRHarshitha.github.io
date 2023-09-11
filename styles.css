@@ -9,20 +9,20 @@ body {
     font-family: 'Inknut Antiqua', serif;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     overflow-x: hidden; /* Prevent horizontal scroll on small screens */
     margin: 0;
     padding: 0;
 }
 
 /* Background */
-.background {
+.background 1 {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://uploads-ssl.webflow.com/62d597b300f3e8bc76aff8db/63d8017be5fcbfa5179dd069_Tadao%20Ando.png');
+    background-image: url('https://images.pexels.com/photos/6044297/pexels-photo-6044297.jpeg');
     z-index: -1;
 }
 
@@ -45,8 +45,8 @@ body {
 }
 
 .logo-anim img {
-    max-width: 120px; /* Increased the logo width */
-    height: 120px; /* Increased the logo height */
+    max-width: 160px; /* Increased the logo width */
+    height: 180px; /* Increased the logo height */
     margin-right: 20px;
 }
 
@@ -71,6 +71,16 @@ body {
     margin: 0 20px;
     animation: fadeInRight 2s ease forwards;
     opacity: 0;
+}
+/* Background */
+.background 2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.pexels.com/photos/5292194/pexels-photo-5292194.jpeg');
+    z-index: -1;
 }
 
 @keyframes fadeInRight {
@@ -114,7 +124,7 @@ body {
 .footer {
     text-align: center;
     padding: 2rem;
-    color: white;
+    color: black;
     font-size: 0.8rem;
     animation: fadeIn 3s forwards;
 }
